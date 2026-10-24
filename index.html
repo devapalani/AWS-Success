@@ -1,0 +1,288 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpeedZone | Bike Showroom</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SPEED<span>ZONE</span></h1>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bikes">Our Bikes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-btn">Book Test Ride</a>
+
+            <button class="menu-btn" id="menuBtn"
+                    aria-label="Toggle navigation">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO SPEEDZONE</p>
+
+            <h2>FIND YOUR<br>
+                <span>PERFECT RIDE</span>
+            </h2>
+
+            <p class="hero-description">
+                Discover powerful bikes, stylish designs and
+                the ultimate riding experience.
+            </p>
+
+            <a href="#bikes" class="primary-btn">Explore Bikes →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85"
+                alt="Motorcycle at SpeedZone showroom">
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <h3>🏍️ 25+</h3>
+            <p>Bike Models</p>
+        </div>
+
+        <div class="feature">
+            <h3>⭐ 4.8/5</h3>
+            <p>Customer Rating</p>
+        </div>
+
+        <div class="feature">
+            <h3>🛠️ Expert</h3>
+            <p>Service Support</p>
+        </div>
+
+        <div class="feature">
+            <h3>🤝 Trusted</h3>
+            <p>Customer Service</p>
+        </div>
+    </section>
+
+    <!-- Bikes Section -->
+    <section class="bikes-section" id="bikes">
+
+        <div class="section-heading">
+            <p class="tagline">OUR COLLECTION</p>
+            <h2>Explore Our <span>Bikes</span></h2>
+            <p>Choose your dream bike from our collection.</p>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="bikeSearch"
+                placeholder="Search bikes... e.g. Yamaha, KTM"
+                aria-label="Search bikes">
+
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Bike Cards -->
+        <div class="bike-container" id="bikeContainer">
+
+            <div class="bike-card" data-name="yamaha r15 v4">
+                <img
+                    src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=700&q=80"
+                    alt="Sport motorcycle">
+
+                <div class="bike-info">
+                    <p class="bike-category">SPORTS BIKE</p>
+                    <h3>Yamaha R15 V4</h3>
+                    <p class="bike-description">
+                        Sporty design with an exciting riding experience.
+                    </p>
+                    <h4>₹1,85,000*</h4>
+                    <button class="book-btn"
+                            data-bike="Yamaha R15 V4">
+                        Book Test Ride
+                    </button>
+                </div>
+            </div>
+
+            <div class="bike-card" data-name="ktm duke 390">
+                <img
+                    src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=700&q=80"
+                    alt="Naked sports motorcycle">
+
+                <div class="bike-info">
+                    <p class="bike-category">NAKED SPORTS</p>
+                    <h3>KTM Duke 390</h3>
+                    <p class="bike-description">
+                        Aggressive styling and powerful performance.
+                    </p>
+                    <h4>₹3,20,000*</h4>
+                    <button class="book-btn"
+                            data-bike="KTM Duke 390">
+                        Book Test Ride
+                    </button>
+                </div>
+            </div>
+
+            <div class="bike-card" data-name="royal enfield classic 350">
+                <img
+                    src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=700&q=80"
+                    alt="Classic style motorcycle">
+
+                <div class="bike-info">
+                    <p class="bike-category">CRUISER</p>
+                    <h3>Classic 350</h3>
+                    <p class="bike-description">
+                        Timeless styling for comfortable rides.
+                    </p>
+                    <h4>₹1,95,000*</h4>
+                    <button class="book-btn"
+                            data-bike="Royal Enfield Classic 350">
+                        Book Test Ride
+                    </button>
+                </div>
+            </div>
+
+            <div class="bike-card" data-name="honda sp 125">
+                <img
+                    src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=700&q=80"
+                    alt="Street motorcycle">
+
+                <div class="bike-info">
+                    <p class="bike-category">COMMUTER</p>
+                    <h3>Honda SP 125</h3>
+                    <p class="bike-description">
+                        Everyday practicality with modern styling.
+                    </p>
+                    <h4>₹95,000*</h4>
+                    <button class="book-btn"
+                            data-bike="Honda SP 125">
+                        Book Test Ride
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No bikes found. Try another search.
+        </p>
+
+        <p class="price-note">
+            *Prices are sample display prices for this demo website.
+            Contact the showroom for actual on-road prices.
+        </p>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=900&q=80"
+                alt="Motorcycle showroom experience">
+        </div>
+
+        <div class="about-content">
+            <p class="tagline">ABOUT OUR SHOWROOM</p>
+
+            <h2>Your Journey<br>
+                Starts <span>Here</span>
+            </h2>
+
+            <p>
+                At SpeedZone, we help riders discover motorcycles
+                that match their lifestyle. Explore our collection,
+                compare models and contact our team for assistance.
+            </p>
+
+            <a href="#contact" class="primary-btn">
+                Contact Us →
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+            <p class="tagline">LET'S CONNECT</p>
+            <h2>Book Your <span>Test Ride</span></h2>
+            <p>Fill in your details and our team can contact you.</p>
+        </div>
+
+        <form id="bookingForm" class="booking-form">
+
+            <label for="customerName">Your Name</label>
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                required>
+
+            <label for="customerPhone">Phone Number</label>
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="10-digit mobile number"
+                inputmode="numeric"
+                pattern="[6-9][0-9]{9}"
+                maxlength="10"
+                required>
+
+            <label for="bikeModel">Select Bike</label>
+            <select id="bikeModel" required>
+                <option value="">Choose a bike</option>
+                <option>Yamaha R15 V4</option>
+                <option>KTM Duke 390</option>
+                <option>Royal Enfield Classic 350</option>
+                <option>Honda SP 125</option>
+            </select>
+
+            <label for="bookingDate">Preferred Date</label>
+            <input
+                type="date"
+                id="bookingDate"
+                required>
+
+            <button type="submit" class="primary-btn submit-btn">
+                Submit Booking Request
+            </button>
+
+            <p id="formMessage" role="status"></p>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2 class="logo">SPEED<span>ZONE</span></h2>
+
+        <p>Your dream bike is waiting for you.</p>
+
+        <p class="footer-copy">
+            © <span id="currentYear"></span> SpeedZone Bike Showroom.
+            Demo website.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
